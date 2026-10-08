@@ -6,6 +6,8 @@ import { MarkdownView } from './_components/markdown-view'
 import { documents, type DocId } from './_data/docs'
 import { AiWorkflow } from './_sections/ai-workflow'
 import { BackendArchitecture } from './_sections/backend-architecture'
+import { MiroArchitecture } from './_sections/miro-architecture'
+import { MiroWireframes } from './_sections/miro-wireframes'
 import { Experience } from './_sections/experience'
 import { Footer } from './_sections/footer'
 import { FrontendArchitecture } from './_sections/frontend-architecture'
@@ -51,6 +53,8 @@ export function IndexPage({ docId, onOpenDoc, onCloseDoc }: IndexPageProps) {
                     <FrontendArchitecture onOpenDoc={onOpenDoc} />
                     <FrontendDi onOpenDoc={onOpenDoc} />
                     <BackendArchitecture onOpenDoc={onOpenDoc} />
+                    <MiroWireframes />
+                    <MiroArchitecture onOpenDoc={onOpenDoc} />
                 </div>
                 <OpenSource />
             </main>
