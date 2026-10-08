@@ -22,8 +22,8 @@ export function Hero() {
                         <p className="mt-5 max-w-xl text-sm leading-relaxed text-zinc-400 md:text-base">{profile.summary}</p>
                         <div className="mt-7 flex flex-wrap gap-3">
                             <Button href={profile.telegram}>Написать в Telegram</Button>
-                            <Button href={profile.resumeHref} download variant="ghost">
-                                Скачать резюме (PDF)
+                            <Button href={profile.resumeHref} variant="ghost">
+                                Резюме на hh.ru
                             </Button>
                         </div>
                         <ul className="mt-7 flex flex-wrap gap-x-3 gap-y-2 font-mono text-[11px] tracking-wider text-zinc-500 uppercase">

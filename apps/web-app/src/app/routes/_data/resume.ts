@@ -8,7 +8,7 @@ export const profile = {
     email: 'undermuz@gmail.com',
     github: 'https://github.com/undermuz',
     githubLabel: 'github.com/undermuz',
-    resumeHref: `${import.meta.env.BASE_URL}resume.pdf`,
+    resumeHref: 'https://spb.hh.ru/resume/4ed0cbb9ff10f1c4310039ed1f334f6e76536d?hhtmFrom=applicant_profile',
     headline: ['Проектирую сложные', 'продукты с нуля', 'и довожу до продакшена'],
     summary:
         'Fullstack с 15-летним опытом. Собираю экосистемы во главе команды: от архитектуры WebRTC и real-time до ИИ-пайплайнов и геопоиска. Быстро превращаю бизнес-идею в масштабируемый продукт.',
