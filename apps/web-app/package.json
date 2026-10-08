@@ -1,0 +1,14 @@
+{
+  "name": "@portfolio-yay/web-app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.20",
+    "github-slugger": "^2.0.0",
+    "highlight.js": "^11.12.0",
+    "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1"
+  }
+}

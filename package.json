@@ -4,16 +4,46 @@
   "private": true,
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*",
+    "libs/*"
   ],
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.3.3",
+    "@tanstack/react-router": "^1.0.0",
+    "@tanstack/react-router-devtools": "^1.0.0",
+    "framer-motion": "^11.0.0",
+    "inversify": "^7.11.0",
+    "reflect-metadata": "^0.2.2",
+    "@logtape/logtape": "^2.0.4",
+    "qs": "^6.15.0",
+    "@types/qs": "^6.15.0"
+  },
   "devDependencies": {
-    "@nx/js": "23.3.0",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@nx/js": "^23.3.0",
+    "@nx/oxlint": "^23.3.0",
+    "@nx/react": "^23.3.0",
+    "@nx/vite": "^23.3.0",
+    "@nx/web": "23.3.0",
     "@swc/helpers": "~0.5.18",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "ajv": "^8.0.0",
+    "jiti": "2.4.2",
     "nx": "23.3.0",
     "oxfmt": "^0.60.0",
+    "oxlint": "^1.75.0",
     "tslib": "^2.3.0",
-    "typescript": "~6.0.3"
+    "typescript": "~6.0.3",
+    "vite": "^8.0.0",
+    "vite-plugin-dts": "~4.5.0"
   }
 }

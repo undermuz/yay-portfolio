@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+    --color-bg: #0b0b0d;
+    --color-card: #141416;
+    --color-card-raised: #1a1a1d;
+    --color-line: rgb(255 255 255 / 0.08);
+    --color-lime: #c6ff3d;
+    --color-lime-ink: #14160a;
+    --color-muted: #a1a1aa;
+    --color-faint: #71717a;
+    --color-alert: #2a1518;
+    --color-alert-line: #6b3036;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    background: var(--color-bg);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--color-bg);
+    color: #fafafa;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    background: #c6ff3d;
+    color: #14160a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+.prose-doc {
+    --tw-prose-body: #d4d4d8;
+    --tw-prose-headings: #fafafa;
+    --tw-prose-lead: #a1a1aa;
+    --tw-prose-links: #c6ff3d;
+    --tw-prose-bold: #fafafa;
+    --tw-prose-counters: #a1a1aa;
+    --tw-prose-bullets: #71717a;
+    --tw-prose-hr: rgb(255 255 255 / 0.08);
+    --tw-prose-quotes: #e4e4e7;
+    --tw-prose-quote-borders: #c6ff3d;
+    --tw-prose-captions: #a1a1aa;
+    --tw-prose-code: #e4e4e7;
+    --tw-prose-pre-code: #e4e4e7;
+    --tw-prose-pre-bg: #0c0c0e;
+    --tw-prose-th-borders: rgb(255 255 255 / 0.1);
+    --tw-prose-td-borders: rgb(255 255 255 / 0.06);
+}
+
+.prose-doc :where(pre) {
+    border: 1px solid rgb(255 255 255 / 0.08);
+    border-radius: 0.75rem;
+}
+
+.prose-doc :where(code):not(:where(pre code)) {
+    border-radius: 0.375rem;
+    background: rgb(255 255 255 / 0.06);
+    padding: 0.1em 0.35em;
+    font-weight: 500;
+}
+
+.prose-doc :where(code):not(:where(pre code))::before,
+.prose-doc :where(code):not(:where(pre code))::after {
+    content: none;
+}
+
+.prose-doc :where(a) {
+    text-underline-offset: 3px;
+}
+
+.prose-doc :where(h2, h3) {
+    scroll-margin-top: 1rem;
+}
+
+.portfolio-doc-dialog {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    max-width: 64rem;
+    color: inherit;
+}
