@@ -5,8 +5,11 @@ import {
 
 import * as rootRouter from ".";
 
+const basepath = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
+
 const router = createRouter({
     routeTree: rootRouter.tree,
+    basepath,
     defaultPreload: "intent",
     scrollRestoration: true,
 });

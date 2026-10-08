@@ -4,7 +4,10 @@ import react from '@vitejs/plugin-react';
 import path from 'node:path';
 import tailwindcss from '@tailwindcss/vite';
 
-export default defineConfig(() => ({
+const pagesBase = '/yay-portfolio/';
+
+export default defineConfig(({ command }) => ({
+  base: command === 'serve' ? '/' : pagesBase,
   root: import.meta.dirname,
   cacheDir: '../../node_modules/.vite/apps/web-app',
   server: {
