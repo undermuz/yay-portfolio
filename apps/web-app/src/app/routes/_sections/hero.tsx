@@ -38,11 +38,7 @@ export function Hero() {
                         </ul>
                     </div>
                     <Card className="p-4 md:p-5">
-                        <div className="flex items-center justify-between gap-3 font-mono text-[11px] tracking-wider text-zinc-500 uppercase">
-                            <span>Fullstack</span>
-                            <span>15 лет</span>
-                        </div>
-                        <p className="mt-4 text-lg font-medium">{profile.terminal.role}</p>
+                        <p className="text-lg font-medium">{profile.terminal.role}</p>
                         <p className="mt-1 text-sm text-zinc-500">{profile.terminal.place}</p>
                         <div className="mt-4 flex flex-wrap gap-2">
                             {profile.terminal.tags.map((tag) => (

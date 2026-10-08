@@ -21,8 +21,8 @@ export const profile = {
         format: 'удалённо, гибрид, офис',
     },
     terminal: {
-        role: 'Team Lead, Full-stack',
-        place: 'Сеть клиник · с марта 2024',
+        role: 'Senior Fullstack Developer',
+        place: '3+ года в роли',
         status: 'Открыт к предложениям',
         tags: ['Next.js', 'NestJS', 'WebRTC', 'TypeScript', 'Elasticsearch'],
     },
